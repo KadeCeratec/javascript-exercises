@@ -6,10 +6,14 @@ const sumAll = function(num1, num2) {
     }
 
     for (let i = num1; i <= num2; i++) {
-        console.log(i);
+        array.push(i);
     }
 
+     sum = array.reduce((acc, num)=> acc + num, 0);
+    return sum
+
+
 };
-sumAll(10,5);
+sumAll(7, 15);
 // Do not edit below this line
 module.exports = sumAll;
